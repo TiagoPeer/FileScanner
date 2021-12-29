@@ -8,7 +8,9 @@
 		<PackAsTool>true</PackAsTool>
 		<ToolCommandName>filescanner</ToolCommandName>
 		<PackageOutputPath>./nupkg</PackageOutputPath>
-		<Version>2.0</Version>
+		<Version>1.0.1</Version>
+		<RepositoryUrl>https://github.com/TiagoPeer/FileScanner</RepositoryUrl>
+		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
 	</PropertyGroup>
 
 	<ItemGroup>
