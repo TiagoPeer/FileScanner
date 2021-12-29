@@ -43,12 +43,13 @@ namespace MyApp
             {
                 files.AddRange(Directory.GetFiles(directory, $"*.{extension.Trim()}", SearchOption.AllDirectories).ToList());
             }
-            Console.WriteLine($"Foram encontrados {files.Count} ficheiro(s)");
             return files;
         }
 
         public static void GenerateExcel(List<string> files)
         {
+            Console.WriteLine($"Foram encontrados {files.Count} ficheiro(s) para exportar.");
+
             ExcelPackage.LicenseContext = LicenseContext.NonCommercial;
             using (var package = new ExcelPackage())
             {
